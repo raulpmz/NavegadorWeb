@@ -59,14 +59,14 @@
 
     <WebView
         android:layout_width="match_parent"
-        android:layout_height="174dp"
+        android:layout_height="233dp"
         android:id="@+id/web"
-        android:layout_weight="1.16" />
+        />
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="71dp">
+        android:layout_height="match_parent">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -103,5 +103,4 @@
             android:layout_toStartOf="@+id/ibBuscar" />
 
     </RelativeLayout>
-
 </LinearLayout>
