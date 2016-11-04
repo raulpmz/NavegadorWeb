@@ -12,6 +12,7 @@ public class Historial {
     public Historial(String texto){
         this.texto = texto;
     }
+
     public Historial(String texto, String url){
         this.texto = texto;
         this.url = url;
