@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_media_previous"
+            android:id="@+id/ibAnterior"
+            android:layout_weight="1"
+            android:onClick="anterior"
+            android:backgroundTint="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_media_next"
+            android:id="@+id/ibSiguiente"
+            android:layout_weight="1"
+            android:onClick="siguiente"
+            android:backgroundTint="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_popup_sync"
+            android:id="@+id/ibRecargar"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/background_light"
+            android:onClick="recargar" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+            android:id="@+id/ibHome"
+            android:layout_weight="1"
+            android:onClick="home"
+            android:backgroundTint="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_menu_view"
+            android:id="@+id/ibHistorial"
+            android:layout_weight="1"
+            android:onClick="lanzarHistorial"
+            android:backgroundTint="@android:color/background_light" />
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="437dp"
+        android:layout_weight="1.15"
+        android:id="@+id/web"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_search"
+            android:id="@+id/ibBuscar"
+            android:onClick="buscar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/et"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@android:color/background_light" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pb"
+            android:layout_toLeftOf="@+id/ibBuscar"
+            android:layout_toStartOf="@+id/ibBuscar" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/ibBuscar"
+            android:layout_toStartOf="@+id/ibBuscar" />
+
+    </RelativeLayout>
+
+</LinearLayout>
