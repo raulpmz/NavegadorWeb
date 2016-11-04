@@ -15,11 +15,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
 
 public class MainActivity extends AppCompatActivity{
